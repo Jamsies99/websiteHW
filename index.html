@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" height = "100%">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- loading image -->
+    <img src="f.jpg" id = "img" class= "center">
+    <!-- Text goes here!-->
+    <h1 id = "head" onclick="summonCookie()">unyeet the cookie below</h1>
+
+  </head>
+  <body>
+<!-- css style here.  -->
+<!-- loading gif in background -->
+    <style media="screen">
+
+     body{
+
+       background-image: url(cookieMonster.gif);
+     }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    h1{
+      font-family: arial;
+      text-align: center;
+    }
+    </style>
+    <!-- Create button, link script to button -->
+    <button type ="button" onclick="summonCookie()" class ="center">
+       UNYEET </button>
+       <!-- This is the script that gets triggered by the button -->
+   <script>
+      function summonCookie(){
+        //change the picture
+          document.getElementById('img').src = "smile.jpg";
+        }
+    </script>
+
+  </body>
+
+</html>
